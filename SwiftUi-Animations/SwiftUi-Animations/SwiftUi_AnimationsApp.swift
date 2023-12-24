@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct SwiftUi_AnimationsApp: App {
+    
+    // MARK: - Body
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            xmasTreeView()
         }
     }
 }

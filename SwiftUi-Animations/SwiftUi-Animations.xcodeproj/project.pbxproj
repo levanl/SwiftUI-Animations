@@ -11,6 +11,8 @@
 		C43AC6B82B37215A0017DAC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43AC6B72B37215A0017DAC6 /* ContentView.swift */; };
 		C43AC6BA2B37215B0017DAC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C43AC6B92B37215B0017DAC6 /* Assets.xcassets */; };
 		C43AC6BD2B37215B0017DAC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C43AC6BC2B37215B0017DAC6 /* Preview Assets.xcassets */; };
+		C43AC6C42B372E770017DAC6 /* xmasTreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43AC6C32B372E770017DAC6 /* xmasTreeView.swift */; };
+		C43AC6C72B3734400017DAC6 /* EffectsLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = C43AC6C62B3734400017DAC6 /* EffectsLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		C43AC6B72B37215A0017DAC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C43AC6B92B37215B0017DAC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C43AC6BC2B37215B0017DAC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C43AC6C32B372E770017DAC6 /* xmasTreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xmasTreeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C43AC6C72B3734400017DAC6 /* EffectsLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +55,7 @@
 		C43AC6B42B37215A0017DAC6 /* SwiftUi-Animations */ = {
 			isa = PBXGroup;
 			children = (
+				C43AC6C32B372E770017DAC6 /* xmasTreeView.swift */,
 				C43AC6B52B37215A0017DAC6 /* SwiftUi_AnimationsApp.swift */,
 				C43AC6B72B37215A0017DAC6 /* ContentView.swift */,
 				C43AC6B92B37215B0017DAC6 /* Assets.xcassets */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = "SwiftUi-Animations";
+			packageProductDependencies = (
+				C43AC6C62B3734400017DAC6 /* EffectsLibrary */,
+			);
 			productName = "SwiftUi-Animations";
 			productReference = C43AC6B22B37215A0017DAC6 /* SwiftUi-Animations.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = C43AC6A92B37215A0017DAC6;
+			packageReferences = (
+				C43AC6C52B37343F0017DAC6 /* XCRemoteSwiftPackageReference "effects-library" */,
+			);
 			productRefGroup = C43AC6B32B37215A0017DAC6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			files = (
 				C43AC6B82B37215A0017DAC6 /* ContentView.swift in Sources */,
 				C43AC6B62B37215A0017DAC6 /* SwiftUi_AnimationsApp.swift in Sources */,
+				C43AC6C42B372E770017DAC6 /* xmasTreeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C43AC6C52B37343F0017DAC6 /* XCRemoteSwiftPackageReference "effects-library" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/effects-library";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C43AC6C62B3734400017DAC6 /* EffectsLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C43AC6C52B37343F0017DAC6 /* XCRemoteSwiftPackageReference "effects-library" */;
+			productName = EffectsLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C43AC6AA2B37215A0017DAC6 /* Project object */;
 }
